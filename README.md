@@ -1,25 +1,39 @@
 # Soil Moisture Calculator
 
-This application allows you to quickly calculate soil moisture content by entering the dry and wet weights of soil samples. The result is displayed as a percentage, along with a message about the soil condition.
+A small agriculture-focused desktop application built while learning Python. It calculates **gravimetric soil water content** from wet and dry soil sample weights and displays the result through a simple Tkinter interface.
 
-## Features
+## What it does
 
-- Input fields for dry and wet soil weights
-- Automatic calculation of soil moisture content
-- Instant feedback on soil condition (very dry, dry, moist, wet, very wet)
-- User-friendly graphical interface (Tkinter)
+- Accepts dry and wet soil sample weights
+- Validates the entered values
+- Calculates gravimetric water content as:
 
-## Usage
+```text
+((wet weight - dry weight) / dry weight) × 100
+```
 
-1. Run the application.
-2. Enter the dry weight (in grams) in the "Dry Weight (g)" field.
-3. Enter the wet weight (in grams) in the "Wet Weight (g)" field.
-4. Click the "Calculate" button.
-5. The soil moisture content and a condition message will be displayed.
+- Displays the calculated percentage in a desktop GUI
 
-## Requirements
+## Built with
 
-- Python 3.x
-- Tkinter (comes pre-installed with Python)
+- Python
+- Tkinter
 
+## Run locally
 
+```bash
+python toprak-nem-hesaplayıcı.py
+```
+
+Python 3 with Tkinter is required.
+
+## Project context
+
+This is a beginner-level learning project combining my Agricultural Biotechnology background with early Python practice. It focuses on basic input validation, GUI development, and a simple agriculture-related calculation.
+
+> This project is educational and is not intended to replace laboratory protocols or professional agronomic measurements.
+
+---
+
+**Author:** Emre Doğruer  
+GitHub: [@emredogruerr](https://github.com/emredogruerr)
